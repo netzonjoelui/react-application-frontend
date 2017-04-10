@@ -1,0 +1,29 @@
+@import "../../../style/grid";
+
+.recurrence {
+
+  margin-bottom: 10px;
+
+  fieldset {
+    padding-left: 10px;
+  }
+
+  .recurrenceType {
+    padding-left: 15px;
+  }
+
+  .recurrencePattern {
+
+    .recurrenceInput {
+
+      input[type='text'] {
+        width: 50px;
+        text-align: center;
+      }
+    }
+
+    .recurrenceLabel {
+      padding-top: 15px;
+    }
+  }
+}

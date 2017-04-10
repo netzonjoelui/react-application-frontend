@@ -1,0 +1,59 @@
+@import "../../style/variables";
+
+/*
+ * A single uploaded file
+ */
+.fileUpload {
+
+  margin-top: 10px;
+
+  &.fileUploadContainer {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $gutter;
+
+    .fileUploadThumb {
+      flex: 0 0 48px;
+      font-size: 36px;
+
+      img {
+        max-width: 36px;
+      }
+    }
+
+    .fileUploadDetails {
+      flex: 1 100%;
+
+      .fileUploadName {
+      }
+
+      .fileUploadStatus {
+        font-size: smaller;
+      }
+
+      .fileUploadStatusError {
+        font-size: smaller;
+        color: red;
+      }
+    }
+
+    .fileUploadRemove {
+      flex: 0 0 32px;
+
+      .chamel-icon-button {
+        height: 20px;
+      }
+    }
+
+  }
+}
+
+.fileAttachmentError {
+  color: red;
+}
+
+.fileAttachmentButton {
+  margin-right: 15px;
+}

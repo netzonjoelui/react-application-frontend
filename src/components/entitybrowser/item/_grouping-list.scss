@@ -1,0 +1,69 @@
+@import "../../../style/variables";
+@import "../../../style/core";
+
+.groupingsItem {
+
+  /**
+   * Generic selected state
+   */
+  &.selected,
+  &.selected:hover {
+    background-color: #e3e3e3;
+    color: #000;
+  }
+
+  /**
+   * Generic unread state
+   */
+  &.unseen,
+  &.unseen:hover {
+    background-color: #00b2d9;
+    color: #fff;
+  }
+}
+
+.groupingsItemList {
+  padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+  border-bottom: 1px solid $border-color;
+
+  @media #{$device-medium} {
+    padding: $gutter;
+  }
+  @media #{$device-large} {
+    padding: 10px;
+  }
+
+  &:hover {
+    background-color: #e3e3e3;
+  }
+}
+
+.groupingsItemListColor {
+  -webkit-flex: initial;
+  flex: initial;
+  margin-right: $gutter-less;
+
+  @media #{$device-medium} {
+    margin-right: $gutter;
+  }
+
+  @media #{$device-large} {
+    margin-right: $gutter;
+  }
+
+  .colorBox {
+    width: 20px;
+    height: 20px;
+    background-color: $blue-600;
+  }
+}
+
+.groupingsItemListName {
+  cursor: pointer;
+  -webkit-flex: 1;
+  flex: 1;
+}

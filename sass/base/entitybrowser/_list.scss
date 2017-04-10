@@ -1,0 +1,34 @@
+/**
+ * List container
+ */
+.entity-browser-list {
+  overflow: hidden;
+}
+
+/**
+ * Container table for table display mode
+ */
+.entity-browser-list-table {}
+
+.entitybrowser-filter {
+  float: right;
+  position: relative;
+  top: 20px;
+
+  .chamel-popover {
+  }
+}
+
+.entitybrowser-filter:after {
+  clear: both;
+}
+
+.entity-browsersearch-container {
+  position: absolute;
+  right: 0px;
+}
+
+div.entity-browser-advancedsearch-container > span.chamel-snackbar {
+  bottom: 50px;
+}
+

@@ -1,0 +1,32 @@
+.appHeaderLarge {
+	vertical-align: middle;
+	height: 56px;
+	background-color: #141414;
+	color: #e3e3e3;
+
+	.appHeaderLogoCon {
+		padding: 10px 20px 7px 20px;
+		width: 200px;
+		float: left;
+	}
+
+	.appHeaderSearchCon {
+		margin-left: 256px;
+		font-family: Casper;
+	}
+
+	.appHeaderProfileCon {
+		float: right;
+		margin-right: 20px;
+	}
+}
+
+.appBodyLarge {
+	/*font-family: Casper;*/
+
+  /* Override the generic loading div */
+  .loading {
+	margin-top: 10px;
+	text-align: left;
+  }
+}

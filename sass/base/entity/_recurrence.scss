@@ -1,0 +1,20 @@
+.recurrence {
+
+  margin-bottom: 10px;
+
+  .recurrence-pattern {
+    margin-left: 20px;
+
+    .recurrence-input {
+
+      input[type='text'] {
+        width: 50px;
+        text-align: center;
+      }
+    }
+
+    .recurrence-label {
+      margin-top: 15px;
+    }
+  }
+}

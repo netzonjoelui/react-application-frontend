@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Netric Application</title>
+    </head>
+
+    <head>
+        <!-- manually add aereus lib -->
+        <script src="/vendor/aereus/alib_full.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="/build/js/netric.js"></script>
+
+        <!-- css files -->
+        <link rel="stylesheet" id='netric-css-base' href="/build/css/netric.css" />
+        <!-- css files -->
+
+        <script>
+            function startApplication() {
+                // Change the universal login to use local server
+                //netric.server.universalLoginUri = "http://devel.netric.com";
+                //netric.server.universalLoginUri = "http://aereus.netric.com";
+
+                netric.Application.load(function(app){
+                    app.run(document.getElementById("netric-app"));
+                }, "http://devel.netric.com");
+            }
+        </script>
+
+    </head>
+    <body onload="startApplication();">
+        <div id='netric-app' />
+    </body>
+</html>

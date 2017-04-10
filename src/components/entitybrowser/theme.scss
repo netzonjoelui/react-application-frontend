@@ -1,0 +1,49 @@
+/**
+ * List container
+ */
+.entityBrowserList {
+  overflow: hidden;
+}
+
+/**
+ * Container table for table display mode
+ */
+.entityBrowserListTable {
+  width: 100%;
+}
+
+.entityBrowserFilter {
+  float: right;
+  position: relative;
+  top: 20px;
+}
+
+.entityBrowserFilter:after {
+  clear: both;
+}
+
+.entityBrowserSearchContainer {
+  position: absolute;
+  right: 0;
+}
+
+.entityBrowserBlank {
+  margin: 10px;
+}
+
+.floatingActionButton {
+  position: fixed;
+  bottom:0;
+  right:0;
+  padding-right: 10px;
+  padding-bottom: 16px;
+}
+
+.entityBrowserInlineSearchTextContainer {
+  width: 250px;
+  float: right;
+}
+
+.entityBrowserInlineSearchButtonsContainer {
+  float: right;
+}

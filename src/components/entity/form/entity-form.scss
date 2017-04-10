@@ -1,0 +1,296 @@
+@import "../../../style/variables";
+@import "../../../style/grid";
+@import "../../../style/mixins";
+@import "../../../style/core/typography";
+
+.entityForm {
+  .entityFormAttachments {
+    margin: 0 $gutter-less 0 $gutter-less;
+
+    @media #{$device-medium} {
+      margin: 0 $gutter 0 $gutter;
+    }
+
+    @media #{$device-large} {
+      margin: 0 $gutter 0 $gutter;
+    }
+  }
+
+  hr {
+    margin-bottom: 7px;
+  }
+
+  /* Set text fields to 100% width */
+  .chamel-text-field {
+    width: 100%;
+  }
+
+  fieldset {
+    margin: 0 0 $gutter-less 0;
+    padding: 0;
+    border: 0;
+
+    @media #{$device-medium} {
+      margin: 0 $gutter $gutter $gutter;
+    }
+
+    @media #{$device-large} {
+      margin: 0 $gutter $gutter $gutter;
+      border: 1px solid;
+      padding-bottom: 15px;
+    }
+
+    legend {
+      width: 100%;
+      margin-left: 0;
+      padding: $gutter-less;
+      background-color: #f3f3f3;
+
+      @media #{$device-medium} {
+        margin-left: $gutter;
+        width: auto;
+        background-color: transparent;
+      }
+
+      @media #{$device-large} {
+        margin-left: $gutter;
+        width: auto;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .entity-form-header-label {
+    @media #{$device-small} {
+      margin-left: 5%;
+    }
+  }
+
+  .entityFormGroup {
+    margin-top: 15px;
+
+    @media #{$device-small} {
+      margin-left: $gutter;
+    }
+
+    .entity-form-group-label-selected {
+      color: rgba(0, 0, 0, 0.5);
+      margin-left: 6%;
+    }
+  }
+
+  .entity-form-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media #{$device-small} {
+      margin-left: $gutter;
+    }
+
+    .entity-form-group-label-selected {
+      color: rgba(0, 0, 0, 0.5);
+      margin-left: 6%;
+    }
+  }
+
+  .profile-label {
+    padding-left: 23px;
+  }
+
+  /**
+   * Text info class
+   */
+  .info {
+    margin: $gutter-less $gutter-less 0 $gutter-less;
+    padding: 10px;
+    background-color: #e3e3e3;
+
+    @media #{$device-medium} {
+      margin: $gutter $gutter 0 $gutter;
+      border: 2px solid darkgray;
+    }
+
+    @media #{$device-large} {
+      margin: $gutter $gutter 0 $gutter;
+      border: 2px solid darkgray;
+    }
+  }
+
+  .fields-dropdown-menu {
+    max-height: 300px;
+    overflow: auto;
+  }
+
+  .entityFormRemoveButton {
+    height: 20px;
+    width: 20px;
+    padding-top: 0px;
+  }
+
+  .entityFormErrorStatus {
+    color: $red-500
+  }
+
+}
+
+.entityFormRow {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+
+  .entityFormColumn {
+    flex: 1 100%;
+  }
+
+  .entityFormColumnHalf {
+    flex: 0 1 50%;
+  }
+
+  .entityFormColumnQuarter {
+    flex: 0 1 25%;
+  }
+
+  .entityFormColumnSidebar {
+    flex: 0 0 256px;
+  }
+}
+
+.entityFormField {
+  margin: 0 $gutter-less 0 $gutter-less;
+
+  @media #{$device-medium} {
+    margin: 0 $gutter 0 $gutter;
+  }
+
+  @media #{$device-large} {
+    margin: 0 $gutter 0 $gutter;
+  }
+
+  /*
+  display: -webkit-box;
+  display: -moz-box;
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  .entity-form-field-label {
+      -webkit-flex: initial;
+      flex: initial;
+      margin-right: $gutter-less;
+      width: $icon-size;
+  }
+
+  .entity-form-field-value {
+
+  }
+  */
+}
+
+.entityFormFieldLabel {
+  color: rgba(0, 0, 0, 0.5);
+
+  @media #{$device-medium} {
+    float: left;
+    width: 39%;
+  }
+
+  @media #{$device-large} {
+    float: left;
+    width: 32%;
+  }
+}
+
+.entityFormFieldValueObject {
+  width: 100%;
+}
+
+.entityFormFieldValueObject, .entityFormFieldValue {
+
+  @media #{$device-medium} {
+    margin-left: 40%;
+  }
+
+  @media #{$device-large} {
+    margin-left: 33%;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.entityFormFieldValueOnly {
+
+  margin-left: 5%;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.entityFormheadline {
+  @extend .font-style-headline;
+}
+
+.entityFormbody {
+  @extend .font-style-body-1;
+}
+
+.entityFormFieldText {
+  @media #{$device-medium} {
+    margin-left: 40%;
+  }
+
+  @media #{$device-large} {
+    margin-left: 33%;
+  }
+}
+
+.entityFormObjectTypeDropdown {
+  float: left;
+}
+
+.entityFormMemberValue {
+  @media #{$device-medium} {
+    float: left;
+    margin-left: 5%;
+  }
+
+  @media #{$device-large} {
+    float: left;
+    margin-left: 3%;
+  }
+}
+
+.entityFormMemberRemove {
+  float: right;
+}
+
+.entityFormMemberRemove:after {
+  content: " ";
+  clear: both;
+}
+
+/**
+ * Used to display a number of inline elments like
+ * text fields side by side
+ */
+.entityFormFieldInlineBlock {
+  display: inline-block;
+  max-width: 250px;
+  margin-right: $gutter-less;
+
+  @media #{$device-medium} {
+    margin-right: $gutter;
+  }
+
+  @media #{$device-large} {
+    margin-right: $gutter;
+  }
+}

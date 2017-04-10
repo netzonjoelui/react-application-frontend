@@ -1,0 +1,48 @@
+/*
+ * A single uploaded file
+ */
+.file-upload {
+
+  &.file-upload-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $gutter;
+
+    .file-upload-thumb {
+      flex: 0 0 48px;
+      font-size: 36px;
+
+      img {
+        max-width: 36px;
+      }
+    }
+
+    .file-upload-details {
+      flex: 1 100%;
+
+      .file-upload-name {
+      }
+
+      .file-upload-status {
+        font-size: smaller;
+      }
+
+      .file-upload-status-error {
+        font-size: smaller;
+        color: red;
+      }
+    }
+
+    .file-upload-remove {
+      flex: 0 0 32px;
+
+      .chamel-icon-button {
+        height: 20px;
+      }
+    }
+
+
+  }
+}

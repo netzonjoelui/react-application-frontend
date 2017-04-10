@@ -1,0 +1,15 @@
+@import "../style/variables";
+@import "../style/resets";
+@import "../style/core";
+
+.moduleMain {
+  &.moduleMainLeftNavDocked {
+    margin-left: $left-nav-width;
+  }
+}
+
+.colorBox {
+  width: 20px;
+  height: 20px;
+  background-color: $blue-600;
+}

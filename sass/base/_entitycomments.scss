@@ -1,0 +1,58 @@
+/**
+ * EntityCommentsController styles
+ */
+.entity-comments {
+  .entity-comments-form {
+    display: -webkit-flex;
+    display: flex;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+
+    margin-top: $gutter-less;
+
+    @media #{$device-medium} {
+      margin-top: $gutter;
+    }
+
+    @media #{$device-large} {
+      margin-top: $gutter;
+    }
+
+
+    .entity-comments-form-left {
+      -webkit-flex: initial;
+      flex: initial;
+
+      margin-right: $gutter-less;
+      width: $thumb-size;
+
+      @media #{$device-medium} {
+        margin-right: $gutter;
+      }
+
+      @media #{$device-large} {
+        margin-right: $gutter;
+      }
+    }
+
+    .entity-comments-form-center {
+      -webkit-flex: 1;
+      flex: 1;
+    }
+
+    .entity-comments-form-right {
+      width: $icon-button-size;
+
+      /* medium or bigger will use a button rather than icon */
+      @media #{$device-large} {
+        width: $button-min-width;
+      }
+    }
+
+  }
+
+  /* Set text fields to 100% width */
+  .chamel-text-field {
+    width: 100%;
+  }
+}

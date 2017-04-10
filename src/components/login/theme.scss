@@ -1,0 +1,23 @@
+@import "../../style/variables";
+
+.loginPage {
+	padding: 15px;
+
+	.loginLogoCon {
+		text-align: center;
+
+		.loginLogo {
+			max-width: 100%;
+		}
+	}
+
+	.loginFormCon {
+		max-width: 293px;
+		margin-left: auto;
+		margin-right: auto;
+
+		.loginFormActions {
+			margin-top: 20px;
+		}
+	}
+}

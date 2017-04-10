@@ -1,0 +1,97 @@
+.entity-browser-activity {
+  border-bottom: 1px solid $border-color;
+
+  padding: 0 $gutter-less 0 $gutter-less;
+  @media #{$device-medium} {
+    padding: 0;
+  }
+
+
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  -webkit-align-items: center;
+
+  .entity-browser-activity-img {
+    -webkit-flex: initial;
+    flex: initial;
+    margin-right: $gutter-less;
+    width: $thumb-size;
+
+    @media #{$device-medium} {
+      margin-right: $gutter;
+    }
+
+    @media #{$device-large} {
+      margin-right: $gutter;
+    }
+  }
+
+  .entity-browser-activity-details {
+    padding: $gutter-less 0 $gutter-less 0;
+    @media #{$device-medium} {
+      padding: $gutter 0 $gutter 0;
+    }
+    @media #{$device-large} {
+      padding: $gutter 0 $gutter 0;
+    }
+    -webkit-flex: 1;
+    flex: 1;
+
+    .entity-browser-activity-header {
+      @extend .font-style-subhead-1;
+      line-height: 17px;
+      padding-top: 0px;
+      margin-bottom: 0px;
+
+    }
+
+    .entity-browser-activity-title {
+      @extend .font-style-caption;
+      padding: 0;
+      margin: 0;
+    }
+
+    .entity-browser-activity-image {
+      margin-top: 10px;
+    }
+
+    .entity-browser-activity-body {
+      line-height: 14px;
+      padding-top: 0px;
+      margin: 3px 0;
+    }
+  }
+
+  /**
+   * activity view
+   */
+  &.entity-browser-item-activity {
+
+  }
+
+  /**
+   * Activity view
+   */
+  &.entity-browser-item-activity {
+
+  }
+
+  /**
+   * Generic selected state
+   */
+  &.selected,
+  &.selected:hover{
+    background-color:#e3e3e3;
+    color:#000;
+  }
+
+  /**
+   * Generic unread state
+   */
+  &.unseen,
+  &.unseen:hover{
+    background-color:#00b2d9;
+    color:#fff;
+  }
+}

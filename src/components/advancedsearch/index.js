@@ -1,0 +1,1 @@
+import advanced_search from './_advanced-search.scss';
